@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_title"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+    <LinearLayout
+        android:id="@+id/parameter_ll"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/artist"
+        android:gravity="center"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/change_artist_tv"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@color/white"
+        android:id="@+id/change_artist_et"
+        android:layout_marginBottom="40sp"
+        android:gravity="center"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/song"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/change_song_tv"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/change_song_et"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/change_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parameter_ll"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/save_title"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+</RelativeLayout>

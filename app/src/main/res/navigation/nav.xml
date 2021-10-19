@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.hit.musicplayer.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_addSongFragment"
+            app:destination="@id/addSongFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_songFragment"
+            app:destination="@id/songFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSongFragment"
+        android:name="com.hit.musicplayer.AddSongFragment"
+        android:label="AddSongFragment" >
+        <action
+            android:id="@+id/action_addSongFragment_to_songFragment"
+            app:destination="@id/songFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/songFragment"
+        android:name="com.hit.musicplayer.SongFragment"
+        android:label="SongFragment" >
+        <action
+            android:id="@+id/action_songFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_songFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_songFragment_to_pictureFragment"
+            app:destination="@id/pictureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.hit.musicplayer.TitleFragment"
+        android:label="TitleFragment" >
+        <action
+            android:id="@+id/action_titleFragment_to_songFragment"
+            app:destination="@id/songFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pictureFragment"
+        android:name="com.hit.musicplayer.PictureFragment"
+        android:label="PictureFragment" >
+        <action
+            android:id="@+id/action_pictureFragment_to_songFragment"
+            app:destination="@id/songFragment" />
+    </fragment>
+</navigation>
